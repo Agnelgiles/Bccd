@@ -198,6 +198,8 @@ for epoch_num in range(num_epochs):
 
             X, Y, img_data = next(data_gen_train)
 
+
+
             loss_rpn = model_rpn.train_on_batch(X, Y)
 
             P_rpn = model_rpn.predict_on_batch(X)
